@@ -1,0 +1,38 @@
+name: "Model Config"
+version: 0.0.0
+model:
+    # dolphin: 
+    #     base: 
+    #         hf_model_name: DataoceanAI/dolphin-base
+    #         model_size: base
+    #     small: 
+    #         hf_model_name: DataoceanAI/dolphin-small
+    #         model_size: small
+    whisper: 
+        base: 
+            weight_url: https://openaipublic.azureedge.net/main/whisper/models/ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e/base.pt
+            model_size: base
+        tiny: 
+            weight_url: https://openaipublic.azureedge.net/main/whisper/models/65147644a518d12f04e32d6f3b26facc3f8dd46e5390956a9424a650c0ce22b9/tiny.pt
+            model_size: tiny
+    wenet: 
+        base: 
+            weight_url: https://openaipublic.azureedge.net/main/whisper/models/ed3a0b6b1c0edf879ad9b11b1af5a0e6ab5db9205f891f668f8b0e6c6326e34e/base.pt
+            model_size: base
+        tiny: 
+            weight_url: https://openaipublic.azureedge.net/main/whisper/models/65147644a518d12f04e32d6f3b26facc3f8dd46e5390956a9424a650c0ce22b9/tiny.pt
+            model_size: tiny
+    hubert:
+        large: 
+            hf_model_name: facebook/hubert-large-ls960-ft
+            model_size: large
+            output_hidden_states: true # 所有的隐藏输出
+    wav2vec2:
+        base:
+            hf_model_name: facebook/wav2vec2-base-960h
+            model_size: base
+            output_hidden_states: true
+        large: 
+            hf_model_name: facebook/hubert-large-ls960-ft
+            model_size: large
+            output_hidden_states: true
